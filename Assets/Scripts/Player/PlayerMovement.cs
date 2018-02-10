@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
         Move(_playerInput.CaptureAxisMovement());
         Rotate(_playerInput.CaptureMouseInput());
 	}
