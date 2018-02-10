@@ -465,7 +465,7 @@ Prefab:
       value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 114784330539589366, guid: 7fcc11a1cd78fe54a8db9258590df14f, type: 2}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 7fcc11a1cd78fe54a8db9258590df14f, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &2020168617 stripped
@@ -484,8 +484,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e27be5d9cf6ad254c86ebdc766794870, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyStats: {fileID: 0}
-  currentState: {fileID: 0}
+  enemyStats: {fileID: 11400000, guid: 375c1b02de7f8774cb28be364c0d4f5c, type: 2}
+  eyes: {fileID: 0}
+  currentState: {fileID: 11400000, guid: 82728faeb982a1d41a26746ea23f899f, type: 2}
   remainState: {fileID: 0}
   navMeshAgent: {fileID: 0}
   wayPointList: []
