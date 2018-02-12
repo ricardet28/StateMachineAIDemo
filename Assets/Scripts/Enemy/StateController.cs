@@ -6,6 +6,8 @@ using UnityEngine.AI;
 
 public class StateController : MonoBehaviour {
 
+    [HideInInspector]public Vector3 initialPosition;
+
     public EnemyStats enemyStats;
     public Transform eyes;
     public State currentState;
@@ -23,6 +25,7 @@ public class StateController : MonoBehaviour {
     private void Awake()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        initialPosition = transform.position;
         aiActive = true;
     }
 

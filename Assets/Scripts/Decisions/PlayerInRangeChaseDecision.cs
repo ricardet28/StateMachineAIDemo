@@ -15,7 +15,7 @@ public class PlayerInRangeChaseDecision : Decision {
     public bool PlayerInRange(StateController controller)
     {
         float distance = Vector3.Distance(controller.eyes.position, controller.chaseTarget.position);
-        if (distance > controller.enemyStats.maxDistanceChase)
+        if (distance > controller.enemyStats.lookRange)
         {
             return false;
         }
