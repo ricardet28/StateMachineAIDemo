@@ -13,7 +13,7 @@ public class StateController : MonoBehaviour {
 
     [HideInInspector]public NavMeshAgent navMeshAgent;
     public List<Transform> wayPointList;
-    [HideInInspector]public int nextWayPoint;
+    public int nextWayPoint;
     [HideInInspector]public Transform chaseTarget;
     [HideInInspector]public float stateTimeElapsed;
 
@@ -23,6 +23,7 @@ public class StateController : MonoBehaviour {
     private void Awake()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        aiActive = true;
     }
 
     public void SetupAI (bool aiActivationFromTankManager, List<Transform> wayPointsFromTankManager)
@@ -42,6 +43,7 @@ public class StateController : MonoBehaviour {
 
     private void Update()
     {
+        Debug.Log("aiActive = " + aiActive);
         if (!aiActive)
             return;
         currentState.UpdateState(this);
