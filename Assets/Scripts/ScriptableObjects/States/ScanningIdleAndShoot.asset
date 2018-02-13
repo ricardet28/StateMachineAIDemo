@@ -9,12 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d41ae992c18185f45b0fb2e339ddd154, type: 3}
-  m_Name: ScanningIdle
+  m_Name: ScanningIdleAndShoot
   m_EditorClassIdentifier: 
   actions:
   - {fileID: 11400000, guid: 9225e23c8a976614983ce57517e8352c, type: 2}
   transitions:
   - decision: {fileID: 11400000, guid: 2b33d27f0a420334c9be2ba6d30ae77d, type: 2}
-    desiredState: {fileID: 11400000, guid: 0a2877439ea87634890932ef2241479e, type: 2}
+    desiredState: {fileID: 11400000, guid: 9680d9429296a2c429a8130f5b957330, type: 2}
     alternativeState: {fileID: 11400000, guid: cbc644983336429428b279f41bec053e, type: 2}
   sceneGizmoColor: {r: 0, g: 0.13103437, b: 1, a: 1}

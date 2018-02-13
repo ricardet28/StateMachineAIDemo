@@ -12,11 +12,12 @@ public class EnemyStats : ScriptableObject {
 
     public float attackRange = 1f;
     public float attackRate = 1f;
-    public float attackForce = 15f;
+    public float attackForce = 2f;
     public int attackDamage = 50;
 
     public float searchDuration = 4f;
     public float searchingTurnSpeed = 120f;
-    
-    public float speedRotation = 2f;
+
+    public float shootRatio = 1f;
+    public float speedRotation = 5f;
 }

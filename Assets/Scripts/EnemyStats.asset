@@ -15,11 +15,11 @@ MonoBehaviour:
   movePatrolSpeed: 3
   lookRange: 25
   lookSphereCastRadius: 1
-  attackRange: 1
-  attackRate: 1
-  attackForce: 15
+  attackRange: 25
+  attackRate: 0.5
+  attackForce: 2.3
   attackDamage: 50
   searchDuration: 4
   searchingTurnSpeed: 120
-  maxDistanceChase: 15
+  shootRatio: 1
   speedRotation: 30

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41ae992c18185f45b0fb2e339ddd154, type: 3}
+  m_Name: Shooting
+  m_EditorClassIdentifier: 
+  actions:
+  - {fileID: 11400000, guid: 5b3c6d537360b46409d4067ef991627a, type: 2}
+  transitions:
+  - decision: {fileID: 11400000, guid: 5de5f0088b799c34aac0fcb323f92390, type: 2}
+    desiredState: {fileID: 11400000, guid: cbc644983336429428b279f41bec053e, type: 2}
+    alternativeState: {fileID: 11400000, guid: 0da070636527d9449b891e5a6b7cf838, type: 2}
+  sceneGizmoColor: {r: 1, g: 0.6196755, b: 0.44852942, a: 1}
