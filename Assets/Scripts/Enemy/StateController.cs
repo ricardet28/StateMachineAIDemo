@@ -8,6 +8,8 @@ public class StateController : MonoBehaviour {
 
     [HideInInspector]public Vector3 initialPosition;
 
+    
+
     public Rigidbody projectile;
     public Transform firePosition;
 

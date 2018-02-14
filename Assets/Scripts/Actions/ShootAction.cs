@@ -13,6 +13,7 @@ public class ShootAction : Action
 
     private void ShootPlayer(StateController controller)
     {
+        Vector3 aimPlayer = controller.chaseTarget.position - controller.transform.position;
 
         Vector3 direction = controller.chaseTarget.position - controller.transform.position;
         direction.y = 0;
@@ -20,19 +21,34 @@ public class ShootAction : Action
         controller.transform.rotation = Quaternion.Lerp(controller.transform.rotation, targetRotation, 4f * Time.deltaTime);
 
         RaycastHit hit;
-        Debug.DrawRay(controller.eyes.position, controller.eyes.forward.normalized * controller.enemyStats.attackRange, Color.red);
+        Vector3 startRayPosition = new Vector3(controller.eyes.position.x, 1f, controller.eyes.position.z);
+        Vector3 directionRay = new Vector3(controller.eyes.forward.x, 0f, controller.eyes.forward.z);
+        Debug.DrawRay(startRayPosition, directionRay.normalized * controller.enemyStats.attackRange, Color.red);
+        
+        //if (controller.chaseTarget != null)
+        //{
+            //Vector3 aimPlayer = controller.chaseTarget.position - controller.transform.position;
 
-        if (Physics.SphereCast(controller.eyes.position, controller.enemyStats.lookSphereCastRadius, controller.eyes.forward, out hit, controller.enemyStats.attackRange)
+            if (Mathf.Round(controller.transform.position.y) != 1)
+            {
+                Debug.DrawRay(controller.eyes.position, aimPlayer.normalized * controller.enemyStats.lookRange, Color.cyan);
+            }
+        //}
+
+
+        if (Physics.SphereCast(startRayPosition, controller.enemyStats.lookSphereCastRadius, directionRay, out hit, controller.enemyStats.attackRange)
             && hit.collider.CompareTag("Player"))
         {
             if (controller.checkIfCountDownElapsed(controller.enemyStats.attackRate))
             {
-                Rigidbody projectileInstance = (Rigidbody)Instantiate(controller.projectile, controller.firePosition.position, controller.firePosition.rotation);
-                projectileInstance.velocity = Vector3.Distance(controller.transform.position, controller.chaseTarget.position) * controller.enemyStats.attackForce * controller.firePosition.forward;
+                Rigidbody projectileInstance = (Rigidbody)Instantiate(controller.projectile, controller.firePosition.position, controller.eyes.rotation);
+                //projectileInstance.velocity = Vector3.Distance(controller.transform.position, controller.chaseTarget.position) * controller.enemyStats.attackForce * controller.firePosition.forward;
+                projectileInstance.velocity = Vector3.Distance(controller.transform.position, controller.chaseTarget.position) * controller.enemyStats.attackForce * aimPlayer.normalized;
                 controller.stateTimeElapsed = 0f;
                 
             }
         }
+
     }
 
 }
