@@ -256,7 +256,6 @@ MonoBehaviour:
   firePosition: {fileID: 0}
   enemyStats: {fileID: 11400000, guid: 375c1b02de7f8774cb28be364c0d4f5c, type: 2}
   eyes: {fileID: 4226916174843730}
-  startRay: {fileID: 0}
   currentState: {fileID: 11400000, guid: 5e9d8b4c4cac16f4fba1943b653f15ae, type: 2}
   remainState: {fileID: 11400000, guid: cbc644983336429428b279f41bec053e, type: 2}
   navMeshAgent: {fileID: 0}

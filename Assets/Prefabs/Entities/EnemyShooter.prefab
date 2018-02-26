@@ -87,13 +87,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1946606294983424}
-  m_LocalRotation: {x: 0.24675333, y: -0, z: 0.000000007450579, w: 0.9690783}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.04, y: 0.25, z: 0.75}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 4174991999929356}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 28.571001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4144673678762522
 Transform:
   m_ObjectHideFlags: 1
@@ -286,7 +286,6 @@ MonoBehaviour:
   firePosition: {fileID: 4871813574587258}
   enemyStats: {fileID: 11400000, guid: 375c1b02de7f8774cb28be364c0d4f5c, type: 2}
   eyes: {fileID: 4091259993129150}
-  startRay: {fileID: 0}
   currentState: {fileID: 11400000, guid: 0da070636527d9449b891e5a6b7cf838, type: 2}
   remainState: {fileID: 11400000, guid: cbc644983336429428b279f41bec053e, type: 2}
   navMeshAgent: {fileID: 0}

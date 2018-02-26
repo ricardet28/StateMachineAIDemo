@@ -37,6 +37,11 @@ public class DetectPlayerDecision : Decision {
             && hit.collider.CompareTag("Player")){
 
             controller.chaseTarget = hit.transform;
+
+            if (controller.sons.Length > 0) //if it has sons.
+            {
+                controller.fatherDetectsPlayer = true;
+            }
             return true;
 
         }
