@@ -38,7 +38,7 @@ public class DetectPlayerDecision : Decision {
 
             controller.chaseTarget = hit.transform;
 
-            if (controller.sons.Length > 0) //if it has sons.
+            if (controller.sons.Length > 0) //if it has sons / if we are a father
             {
                 controller.fatherDetectsPlayer = true;
             }

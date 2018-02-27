@@ -13,12 +13,15 @@ public class FatherDetectPlayer : Decision {
 
     private bool fatherDetectsPlayer(StateController controller)
     {
-
-        if (controller.father.GetComponent<StateController>().fatherDetectsPlayer)
+        if (controller.father != null)
         {
-            Debug.Log("our parent has detected the player.");
-            return true;
+            if (controller.father.GetComponent<StateController>().fatherDetectsPlayer)
+            {
+                Debug.Log("our parent has detected the player.");
+                return true;
+            }
         }
+        
         return false;
 
     }

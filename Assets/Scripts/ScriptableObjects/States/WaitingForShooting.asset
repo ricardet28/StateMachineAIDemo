@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Name: WaitingForShooting
   m_EditorClassIdentifier: 
   actions:
-  - {fileID: 11400000, guid: 8bdf1cf201eb3f744bec46865a5b1de5, type: 2}
+  - {fileID: 11400000, guid: f8a8b0b25aa04874f85ea4461c53e7b3, type: 2}
   transitions:
   - decision: {fileID: 11400000, guid: 7c0680dd34777034a86a08984066c81b, type: 2}
     desiredState: {fileID: 11400000, guid: 9680d9429296a2c429a8130f5b957330, type: 2}
     alternativeState: {fileID: 11400000, guid: cbc644983336429428b279f41bec053e, type: 2}
+  - decision: {fileID: 11400000, guid: 5de5f0088b799c34aac0fcb323f92390, type: 2}
+    desiredState: {fileID: 11400000, guid: cbc644983336429428b279f41bec053e, type: 2}
+    alternativeState: {fileID: 11400000, guid: b87d465045aebe74faf29005c1237668, type: 2}
   sceneGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}

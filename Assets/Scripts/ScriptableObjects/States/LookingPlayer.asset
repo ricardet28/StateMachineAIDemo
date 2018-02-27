@@ -9,15 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d41ae992c18185f45b0fb2e339ddd154, type: 3}
-  m_Name: Shooting
+  m_Name: LookingPlayer
   m_EditorClassIdentifier: 
   actions:
-  - {fileID: 11400000, guid: 5b3c6d537360b46409d4067ef991627a, type: 2}
+  - {fileID: 11400000, guid: f8a8b0b25aa04874f85ea4461c53e7b3, type: 2}
   transitions:
   - decision: {fileID: 11400000, guid: 5de5f0088b799c34aac0fcb323f92390, type: 2}
     desiredState: {fileID: 11400000, guid: cbc644983336429428b279f41bec053e, type: 2}
-    alternativeState: {fileID: 11400000, guid: b87d465045aebe74faf29005c1237668, type: 2}
-  - decision: {fileID: 11400000, guid: 7c0680dd34777034a86a08984066c81b, type: 2}
-    desiredState: {fileID: 11400000, guid: cbc644983336429428b279f41bec053e, type: 2}
-    alternativeState: {fileID: 11400000, guid: 14e1befc841435e48a4f40c0fbdf8230, type: 2}
-  sceneGizmoColor: {r: 1, g: 0.6196755, b: 0.44852942, a: 1}
+    alternativeState: {fileID: 11400000, guid: 5456ce2b46e0df44fa5534807404cc7b, type: 2}
+  sceneGizmoColor: {r: 0, g: 1, b: 0.91724133, a: 1}
