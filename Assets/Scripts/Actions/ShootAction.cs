@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "PluggableAI/Actions/Shoot")]
-public class ShootAction : Action
+public class ShootAction : ActionAI
 {
     private float currentTimer = 0f;
     public override void Act(StateController controller)

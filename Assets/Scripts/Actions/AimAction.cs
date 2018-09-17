@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu (menuName = "PluggableAI/Actions/Aim")]
-public class AimAction : Action {
+public class AimAction : ActionAI {
 
     public override void Act(StateController controller)
     {

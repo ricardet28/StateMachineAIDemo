@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu (menuName = "PluggableAI/State")]
 public class State : ScriptableObject {
 
-    public Action[] actions;
+    public ActionAI[] actions;
     public Transition[] transitions;
     public Color sceneGizmoColor = Color.grey;
 

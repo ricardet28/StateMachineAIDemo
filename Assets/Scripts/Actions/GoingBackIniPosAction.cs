@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu (menuName = "PluggableAI/Actions/GoingBackInitialPosition")]
-public class GoingBackIniPosAction : Action {
+public class GoingBackIniPosAction : ActionAI {
 
     public override void Act(StateController controller)
     {

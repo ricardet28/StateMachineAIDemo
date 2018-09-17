@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu (menuName = "PluggableAI/Actions/ScanIdle")]
-public class ScanIdleAction : Action {
+public class ScanIdleAction : ActionAI {
 
     public override void Act(StateController controller)
     {
